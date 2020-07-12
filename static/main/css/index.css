@@ -2,27 +2,39 @@ html body{
 	position: relative;
 	height: 100%;
 	width: 100%;
+	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 }
 header{
 	background-color: #EEDEE9;
+	overflow: hidden;
 	width: 100%;
+	padding: 30px;
+	margin: 0px;
 }
 header a{
 	color: #0d0a0d;
 	text-decoration: none;
 	font-size: 17px;
 	font-weight: 300;
-	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 50px;
 	letter-spacing: 2px;	
 	text-align: center;	
-	height: auto;
 }
 header a:hover{
 	transition: height 2s;
 	font-size: 25px;
+	color: white;
+}
+header img{
+	height: 75px;
+	width: 75px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center{
 
 }
 .left{
@@ -32,6 +44,7 @@ header a:hover{
 	float: right;
 }
 .right-link{
-	
+	top:20px;
+	padding-right: 80px;
 }
 
