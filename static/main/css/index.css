@@ -1,0 +1,37 @@
+html body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	background-color: #EEDEE9;
+	width: 100%;
+}
+header a{
+	color: #0d0a0d;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 300;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	letter-spacing: 2px;	
+	text-align: center;	
+	height: auto;
+}
+header a:hover{
+	transition: height 2s;
+	font-size: 25px;
+
+}
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+.right-link{
+	
+}
+
