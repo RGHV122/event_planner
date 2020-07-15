@@ -1,31 +1,8 @@
-{% load static %}
+{% extends 'main/base.html'%}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Heavenly hitched</title>
-	<link rel="shortcut icon" href="{% static "main/images/icon.png" %}" type="image/png">
-	<link rel="stylesheet" type="text/css" href="{% static "main/css/index.css" %}">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
-</head>
-<body>
- <header>
- 	<div class="left">
- 		<a class="left-link" href="/">Home</a>
-	 	<a class="left-link" href="/">About</a>
-	 	<a class="left-link" href="/">Gallery</a>
-	 	<a class="left-link" href="/">Services</a>
-	 	<a class="left-link" href="/">Blog</a>
- 	</div>
- 	<div class="center">
- 		<img src="{% static "main/images/icon.png" %}">
- 	</div>
+{% block title%}Heavenly Hitched {% endblock %}
 
- 	<div class="right">
- 		<a  class="right-link" href="/">Contact Us</a>
- 	</div>	
- </header>
+{% block head%} {% endblock %}
 
-</body>
-</html>
+
+{% block body%}{% endblock %}

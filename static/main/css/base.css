@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;	
+}
+nav img{
+	max-width: 75px;
+	max-height: 75px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.header { /* 100+1=101 priority score, yay! */
+  background-color: #EEDEE9;
+  padding: 30px;
+}
+.nav-item{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
