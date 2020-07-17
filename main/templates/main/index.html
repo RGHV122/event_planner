@@ -1,8 +1,157 @@
 {% extends 'main/base.html'%}
-
+{% load static %}
 {% block title%}Heavenly Hitched {% endblock %}
 
-{% block head%} {% endblock %}
+{% block head%}
+<link rel="stylesheet" type="text/css" href="{% static "main/css/index.css" %}">
+ {% endblock %}
 
 
-{% block body%}{% endblock %}
+{% block body%}
+<div class="message-container">
+  <img src="{% static "main/images/home/message-background.jpg" %}"  alt=" background for theme message" style="width:100%;">
+
+  <div class="message-block .hidden-phone">
+    <h4>You Dream it, We Take Care Of It</h4><hr>
+    <p >~Heavenly hitched</p>
+    <div class="logo-image">
+   <img class="message-logo" src="{% static "main/images/home/black-logo.png" %}" alt=" background for theme message" >
+</div>
+  </div>
+</div>​
+
+
+<div class="what-we-do">
+	<div class="center"><h4>What We Do</h4></div>
+<div class="row ">
+	<div class="col-sm-4">
+		<h5>Venue booking</h5>
+		<p>We offer consultation to help you book the perfect venue in any part of India</p>
+    </div>
+    <div class="col-sm-4">
+		<h5>Hospitality & Logistics</h5>
+		<p>The D-Day is the most special day for the bride, groom and their families but it wouldn’t be surprising to say that the guests need to be felt special too.</p>
+    </div>
+    <div class="col-sm-4">
+		<h5>Decor & Styling</h5>
+		<p>You needn’t worry about the wedding décor and styling as we look after the crucial elements of putting the pieces together that exude your style and sense of aesthetics.</p>
+    </div>
+
+ </div>
+
+ <div class="row ">
+	<div class="col-sm-4">
+		<h5>Gifting</h5>
+		<p>Show that you are thankful to your guests by choosing the most memorable token of love from a gamut of personalized gifts.</p>
+    </div>
+    <div class="col-sm-4">
+		<h5>Photo & Videography</h5>
+		<p>The professionalteam covers all the ceremonies as required and also provides photos for pre-wedding, post-wedding, anniversary, family, and videography at the wedding venue.</p>
+    </div>
+    <div class="col-sm-4">
+		<h5>Hair & Makeup</h5>
+		<p>A Royal Affair ensures that you look flawless in your wedding photos and look no less than how you have always imagined it to be.</p>
+    </div>
+
+ </div>
+</div>
+
+<div class="row border-padding">
+	<div class="col-sm-4">
+		<a href="">
+    		 <img src="{% static "main/images/home/services-background.jpg" %}" class="center-image" alt="background for theme message" >
+    		 <div class="thumb-caption">Services</div>
+    	
+    	</a>
+    </div>
+    
+    <div class="col-sm-4">
+    	<a href="">
+    		<img src="{% static "main/images/home/gallery-background.jpg" %}" class="center-image"alt="background for theme message" >
+       		<div class="thumb-caption">Gallery</div>
+    	</a>
+       
+    </div>
+
+    <div class="col-sm-4">
+    	<a style="padding-right:0px;"href="">
+    		<img src="{% static "main/images/home/about-background.jpg" %}" class="center-image"alt="background for theme message" >
+       		<div class="thumb-caption">About</div>
+    	</a>
+       
+    </div>
+ </div>
+
+ <div class="why-us center">
+ 	<h4>Why us?</h4><hr>
+ 	<div class="border-padding">
+ 		<h4>Why choose us as your Destination wedding planner?</h4>
+
+		<p>Each and every wedding requires a remarkably planned service to turn it into a stunning actuality. Aiming to bring the extraordinary memory of the beginning of togetherness, A Royal Affair who is the wedding planner in Udaipur, offers bespoke facilities and services along with the most skilled and experienced wedding planners. Our entire team completely devote ourselves to make sure that your personality comes shining through.
+	</p>
+
+</div>
+
+<div class="border-padding-less">
+ 		<h4>Our services</h4>
+
+		<p>Heavenly hitched is fastest growimg wedding planners in delhi, and we provide excellent services to our customers such as:</p>
+
+</div>
+<div class="border-padding-less">
+ 		<h4>VENUE BOOKINGS</h4>
+
+		<p>The actual exquisiteness of the wedding lies in celebrating every moment of it. Celebrations form one of those essential and timeless memories, which offer life the new meaning. Thus, to help make every occasion a happy one, we, provide venues, which suit your fairy-tale celebration. We select the best venue from an extensive range of places accessible all over the country as per your preferred days and dates. We, the Destination wedding Planners Udaipur find the striking banquet halls to the most phenomenon outdoor function halls only. Eventually, we provide the ideal assistance and the resources to supervise such bookings, for you to sit back and enjoy this magical journey.</p>
+
+</div>
+
+<div class="border-padding-less">
+ 		<h4>Décor and Design</h4>
+
+		<p>Conceptualizing, designing along with coordinating all aspects of wedding décor and design, including lighting, floral set-ups and also the execution of themes, after understanding your vision, we are always there to serve you the best. Assistance with insurance to proffer protection for your events is one of the main services from our side.</p>
+
+</div>
+<hr>
+ </div>
+
+ <div class="row">
+
+ 	<div class="col-md-6">
+		<div class="center border-padding-less">
+ 		<h4>How We Work</h4>
+
+		<p class="border-padding">Conceptualizing, designing along with coordinating all aspects of wedding décor and design, including lighting, floral set-ups and also the execution of themes, after understanding your vision, we are always there to serve you the best. Assistance with insurance to proffer protection for your events is one of the main services from our side.</p>
+
+</div>
+</div>
+
+
+<div class="col-md-6 center border-padding-1">
+	<h4>Request a call? Just fill this out</h4>
+    	<!-- Default form register -->
+<form class="" action="#!">
+<div class="border-padding">
+    <div class="row">
+        <div class="col">
+            <input type="text" id="firstname" class="text-input" placeholder="First name">
+        </div>
+        <div class="col">
+            <input type="text" id="lastname" class="text-input" placeholder="Last name">
+        </div>
+    </div>
+    <!-- Phone number -->
+    <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
+    <br><br>
+  
+  <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea>    
+
+    <button class="submitbtn" type="submit">Ping us</button>
+</div>
+</form>
+
+    </div>
+ 	
+ </div>
+    
+
+{% endblock %}

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% block title%} {% endblock %}</title>
 	<link rel = "icon" href ="{% static "main/images/icon.png" %}"
         type = "image/x-icon"> 
@@ -33,11 +33,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     
-    <a class="navbar-brand" href="#"><img class="img-fluid" alt="Responsive image" src="{% static "main/images/icon.png" %}">Heavenly Hitched</a>
+    <a class="navbar-brand" href="{% url 'main:index' %}"><img class="img-fluid" alt="Icon" src="{% static "main/images/icon.png" %}">Heavenly hitched</a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="{% url 'main:index' %}">Home</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="#">About</a>
@@ -55,13 +55,23 @@
         <a class="nav-link" href="#">Contact Us</a>
       </li>
       </ul>
-      
     </div>
   </div>
 </nav>
 
 	{% block body %}
   {% endblock %}
+
+  <!-- Footer -->
+        <footer class="page-footer font-small">
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> Heavenlyhitched.com</a>
+          </div>
+          <!-- Copyright -->
+
+        </footer>
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
