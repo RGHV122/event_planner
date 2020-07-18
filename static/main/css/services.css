@@ -1,0 +1,43 @@
+.center{
+	text-align: center!important;
+	padding-bottom: 5%;
+}
+.fluid-container{
+	background-color: #e1f2f0;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.services-block{
+	background-color: white;
+	margin-top: 10px;
+	padding: 20px;
+}
+.service{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.service p{
+	font-size: 0.8rem;
+	
+}
+.service p:first-of-type{
+	text-indent: 15%;
+
+}
+.service p::first-letter {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.services-block span{
+	padding-top: 2.5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2.5px;
+	background-color: black;
+	margin-right: 2px;
+}
+.end-design{
+	padding-top: 30px;
+	padding-bottom:30px; 
+}
