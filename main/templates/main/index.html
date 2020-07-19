@@ -127,6 +127,7 @@
 
 
 <div class="col-md-6 center border-padding-1">
+	<div>
 	<h4>Request a call? Just fill this out</h4>
     	<!-- Default form register -->
 <form class="" action="#!">
@@ -139,19 +140,33 @@
             <input type="text" id="lastname" class="text-input" placeholder="Last name">
         </div>
     </div>
-    <!-- Phone number -->
-    <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
-    <br><br>
-  
-  <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea>    
+    <div class="row">
+        <div class="col">
+            <input type="text" id="email" class="text-input" placeholder="Email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea> 
+        </div>
+    </div>
 
     <button class="submitbtn" type="submit">Ping us</button>
 </div>
 </form>
+</div>
+
 
     </div>
  	
  </div>
+ 
 
 
 {% endblock %}

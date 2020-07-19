@@ -78,7 +78,8 @@
 	width: 100%;
 	border-style: none;
 	border-bottom: 1px solid gray;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
+	
 }
 
 .text-area{
@@ -96,7 +97,7 @@
 .submitbtn{
 	margin-top: 10px;
 	width: 100%;
-	background-color: #ABCDE1;
+	background-color: #EEDEE9;
 	color:black;
 	padding-top: 10px;
 	padding-bottom: 10px;
