@@ -78,15 +78,21 @@
 	width: 100%;
 	border-style: none;
 	border-bottom: 1px solid gray;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
+	
 }
-.text-input :focus{
-	border-style: none;
-	border-bottom: 1px solid black;
 
-}
 .text-area{
-	border:1px solid black;
+	border:1px solid gray;
+}
+.text-input:focus,.text-area:focus{
+	outline: none;
+}
+.text-input:focus{
+	border-bottom: 2px solid gray;
+}
+.text-area:focus{
+	border: 2px solid gray;
 }
 .submitbtn{
 	margin-top: 10px;

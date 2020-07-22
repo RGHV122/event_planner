@@ -58,7 +58,7 @@
 
 <div class="row border-padding">
 	<div class="col-sm-4">
-		<a href="">
+		<a href="{% url 'main:services' %}">
     		 <img src="{% static "main/images/home/services-background.jpg" %}" class="center-image" alt="background for theme message" >
     		 <div class="thumb-caption">Services</div>
     	
@@ -127,6 +127,7 @@
 
 
 <div class="col-md-6 center border-padding-1">
+	<div>
 	<h4>Request a call? Just fill this out</h4>
     	<!-- Default form register -->
 <form class="" action="#!">
@@ -140,21 +141,34 @@
         </div>
     </div>
 
-    <input type="text" id="email" class="text-input" placeholder="Email">
-    <!-- Phone number -->
-    <br><br>
-    <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
-    <br><br>
-  
-  <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea>    
+    <div class="row">
+        <div class="col">
+            <input type="text" id="email" class="text-input" placeholder="Email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea> 
+        </div>
+    </div>
+
 
     <button class="submitbtn" type="submit">Ping us</button>
 </div>
 </form>
+</div>
+
 
     </div>
  	
  </div>
-    
+ 
+
 
 {% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+Services | Heavenly hitched
+{% endblock %}
+
+{% block head %}
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<link rel="stylesheet" type="text/css" href="{% static "main/css/services.css" %}">
+
+{% endblock %}
+
+{% block body %}
+
+<div class="body-container">
+  <div class="row">
+    <div class="col-lg-8">
+    	
+    	<div class="services-block">
+    		<h3 class="center">Services</h3><hr>
+    		<div class="service">
+    			<h5>VENUE BOOKING</h5>
+    			<p>We offer consultation to help you book the perfect venue in any part of India and other stunning countries. We understand your requirement for an ambience that is not only going to help you give numerous memorable frames to freeze but also a hospitable vibe to the guests attending the functions. With no hassles to worry about, A Royal Affair considers your budget and your requirement and based on that provides a detailed, customized proposal with the suggested options.</p>
+    		
+    	</div>
+
+    		<div class="center end-design">
+    			{% for i in colors%}
+				<span style="background-color:{{i}}; border:1px solid {{i}};"></span>
+				{% endfor %}
+    		</div>
+
+    	<div class="service">
+    			<h5>HOSPITALITY & LOGISTICS</h5>
+    			<p>The D-Day is the most special day for the bride, groom and their families but it wouldn’t be surprising to say that the guests need to be felt special too; after all, they have arrived to be a part of your grand celebration, isn’t it?</p>
+    		
+    	</div>
+    	<div class="center end-design">
+    			{% for i in colors%}
+				<span style="background-color:{{i}}; border:1px solid {{i}};"></span>
+				{% endfor %}
+    		</div>
+
+    	<div class="service">
+    			<h5>GIFTING</h5>
+    			<p>Gifts & Favors are a meaningful way to show gratitude to the ones who are a part of your special day; the ones who took out time to specially address your memorable day by being present during the beginning of a beautiful journey. Show that you are thankful to your guests by choosing the most memorable token of love from a gamut of personalized gifts. A Royal Affair offers unique, hand-crafted, personalized and designer gifts for your guests to add that finishing touch to your wedding.</p>
+    		
+    	</div>
+    	<div class="center end-design">
+    			{% for i in colors%}
+				<span style="background-color:{{i}}; border:1px solid {{i}};"></span>
+				{% endfor %}
+    		</div>
+
+    	<div class="service">
+    			<h5>DÉCOR & STYLING</h5>
+    			<p>With A Royal Affair, you needn’t worry about the wedding décor and styling as we look after the crucial elements of putting the pieces together that exude your style and sense of aesthetics in the best way possible. With the specific focus on your requirements, A Royal Affair provides you a gamut of ideas to be incorporated at the venue when it comes to venue décor and styling of the wedding.</p>
+    			<p>Our team creates customized backdrops, scintillating centrepieces for the tables, festoons, banners, decorative items from exotic flowers, hangings and other props that are beautifully styled at the venue. Anything that you want, we will help you find it and get it delivered at your doorstep. All the requirements can be personalized so that each one who enters the venue can see you and your style reflected in the décor.</p>
+    		
+    	</div>
+    	<div class="center end-design">
+    			{% for i in colors%}
+				<span style="background-color:{{i}}; border:1px solid {{i}};"></span>
+				{% endfor %}
+    	</div>
+    </div>
+</div>
+
+<div class="col-lg-4 center form-block">
+
+	<div>
+		<h4>Request a call?</h4>
+<h4>Just fill this out</h4><hr>
+    	<!-- Default form register -->
+<form class="" action="#!">
+<div class="border-padding form">
+    <div class="row">
+        <div class="col">
+            <input type="text" id="firstname" class="text-input" placeholder="First name">
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" id="lastname" class="text-input" placeholder="Last name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" id="email" class="text-input" placeholder="Email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="8"></textarea> 
+        </div>
+    </div>
+
+    <button class="submitbtn" type="submit">Ping us</button>
+</div>
+</form>
+		
+</div>
+<div class="social-connect">
+	<h4 class="center">Connect with us</h4>
+	<!--Facebook-->
+<a class="btn-floating btn-lg btn-fb" onclick="social_media_facebook()" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+<!--Instagram-->
+<a class="btn-floating btn-lg btn-ins" onclick="social_media_instagram()" type="button" role="button"><i class="fab fa-instagram"></i></a>
+<!--Youtube-->
+<a class="btn-floating btn-lg btn-yt"  onclick="social_media_youtube()" type="button" role="button"><i class="fab fa-youtube"></i></a>
+<!--WhatsApp-->
+<a class="btn-floating btn-lg btn-whatsapp" onclick="social_media_whatsapp()" type="button" role="button"><i class="fab fa-whatsapp"></i></a>
+<div class="social-media-facebook">
+	<h5>facebook</h5>
+
+	
+</div>
+<div class="social-media-instagram">
+	<h5>instagram</h5>
+	hey it's instagram
+	
+</div>
+<div class="social-media-youtube">
+	<h5>youtube</h5>
+	hey it's youtube
+	
+</div>
+<div class="social-media-whatsapp">
+	<h5>whatsapp</h5>
+	hey it's whatsapp
+	
+</div>
+
+</div>
+
+	
+
+    </div>
+    	
+  </div>
+</div>
+<script src="{% static "main/javascript/services.js" %}"></script>
+{% endblock %}
