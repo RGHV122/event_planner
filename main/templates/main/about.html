@@ -1,0 +1,73 @@
+
+
+{% extends 'main/base.html' %}
+
+{% block title%} About Us{% endblock %}
+{% block body %}
+
+
+
+
+{% load static %}
+
+{% block head%}
+<link rel="stylesheet" type="text/css" href="{% static "main/css/index.css" %}">
+ {% endblock %}
+
+  <div class="row">
+
+ 	<div class="col-md-8">
+		<div class="center border-padding-less">
+ 		<h1 class="display-3">About Us</h1>
+
+		  <p class="border-padding">The foundation of love and a lifelong bond, a wedding is definitely one of the most memorable days of
+        life. Here at Heavenly Hitched, we assure you your perfect day. Nothing shorter than a dreamy, finest
+        and unforgettable experience. At heavenly hitched, we not only manage a wedding, but we curate it
+        thread by thread with love.</p>
+
+          <p class="border-padding">Heavenly Hitched initiated in 2020 by young, enthusiastic, creative and experienced event managers in New
+      Delhi. "Dilwalon ki Delhi" as it is fondly called is famous for its big fat Indian weddings, From venue
+      selection to theme decor, from authentic food to paradise like outdoors, from tailor made invites to the
+      best musical vaganza, we curate everything. We work intimately with the families to give them the best
+      memories to cherish.</p>
+
+          <p class="border-padding">Heavenly Hitched delivers highly customized, affordable, and a trendy wedding. We are committed to provide a
+      hassle free wedding so that couples and families can focus on the special occasion and only reminisce
+      the profound happiness, not the stress. We assure you to make your wedding picture perfect.  We promise to
+      value every penny you spend and to design your dream wedding for an unforgettable lifetime experience</p>
+
+</div>
+</div>
+
+
+<div class="col-md-4 center border-padding-1">
+	<h4>Connect with us</h4>
+    	<!-- Default form register -->
+<form class="" action="#!">
+<div class="border-padding">
+
+
+    <input type="text" id="firstname" class="text-input" placeholder="First name">
+    <br><br>
+    <input type="text" id="lastname" class="text-input" placeholder="Last name">
+    <br><br>
+
+    <!-- Phone number -->
+    <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
+    <br><br>
+
+  <!-- Email -->
+  <input type="text" id="email" class="text-input" placeholder="Email">
+    <br><br>
+
+  <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea>
+
+    <button class="submitbtn" type="submit">Ping us</button>
+</div>
+</form>
+
+    </div>
+
+ </div>
+
+{% endblock %}
