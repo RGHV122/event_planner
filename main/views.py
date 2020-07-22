@@ -6,9 +6,9 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'main/about.html')
+    return render(request,'main/about.html')
 
 def services(request):
     colors=['#0275d8','#5cb85c','#5bc0de','#f0ad4e','#d9534f']
-	return render(request,'main/services.html',{'colors':colors})
+    return render(request,'main/services.html',{'colors':colors})
 
