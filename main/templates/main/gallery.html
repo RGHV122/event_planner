@@ -1,0 +1,82 @@
+{% extends 'main/base.html'%}
+{% load static %}
+{% block title %} Gallery | Heavenly hitched {% endblock%}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static "main/css/gallery.css" %}">
+<script src="{% static "main/javascript/gallery.js" %}"></script>
+{% endblock %}
+
+{% block body %}
+  <div class="container my-4">
+
+
+    <p class="font-weight-bold">We love to record your special moments so that you can feel mesmerizing when you see them</p>
+
+    <p><strong> Some of Us & Some of You </strong></p>
+
+    <p><Strong>Note: </Strong>In the example below animations and shadows are only an additional option. They are added via JavaScript and they are <strong>not</strong> necessary to make a grid working.</p>
+
+
+    <!--Grid row-->
+    <div class="row ml-1">
+
+      <!--Grid column-->
+      {% for post1 in posts %}
+ 
+      <div class="col-md-4 mb-1 col-6 ">
+      	<a href="javascript:void(0)" onclick="showMyImage({{post1.id }});"><img src="{{post1.image.url }}" class="img-fluid mb-4" alt="" id="{{post1.id }}"
+          data-wow-delay="0.1s"></a>
+      </div>
+      
+      {% endfor %}
+
+    </div>
+    <div id="image-popup" class="image-popup" onclick="hide_popup()">
+
+  <!-- The Close Button -->
+
+ 
+  <!-- Modal Content (The Image) -->
+  <img class="image-in-popup" id="image-in-popup">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<nav class="center" aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+    	{% if page == 1 %}
+      <a class="page-link" href="javascript:void(0)" style="color:gray;" aria-label="Previous">
+        <h2><span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span></h2>
+      </a>
+      {% else %}
+      <a class="page-link" href="{% url 'main:gallery' page=prev_page %}" aria-label="Previous">
+        <h2><span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span></h2>
+      </a>
+      {% endif %}
+    </li>
+    <li class="page-item ml-4">
+    	{% if page == last_page %}
+      <a class="page-link" href="javascript:void(0)" style="color:gray;" aria-label="Next">
+        <h2><span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span></h2>
+      </a>
+      {% else %}
+      <a class="page-link" href="{% url 'main:gallery' page=next_page %}" aria-label="Next">
+        <h2><span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span></h2>
+      </a>
+      {% endif %}
+    </li>
+    </form>
+    
+  </ul>
+</nav>
+
+  </div>
+
+
+{% endblock %}

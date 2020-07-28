@@ -14,7 +14,7 @@ nav img{
 }
 .header { /* 100+1=101 priority score, yay! */
   background-color: #EEDEE9;
-  padding: 30px;
+  padding: 10px;
 }
 
 .nav-item{
@@ -27,5 +27,12 @@ footer{
 }
 .navbar-brand{
 	font-size: 2rem;
+}
+.nav-link{
+	 transition-duration: 0.5s!important;
+}
+.nav-link:hover{
+	background: linear-gradient( to right,black , #022d4f) white no-repeat 0 0!important;
+	color:white!important;
 }
 
