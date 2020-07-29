@@ -1,0 +1,93 @@
+
+
+{% extends 'main/base.html' %}
+
+{% block title%} About Us{% endblock %}
+{% block body %}
+
+
+
+
+{% load static %}
+
+{% block head %}
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<link rel="stylesheet" type="text/css" href="{% static "main/css/contact.css" %}">
+
+{% endblock %}
+<div class="body-container">
+<div class="row">
+
+    <div class="col-md-8 center border-padding-1">
+        <h1>Connect with us</h1>
+        <!-- Default form register -->
+        <form class="" action="#!">
+            <div class="border-padding">
+
+
+                <input type="text" id="firstname" class="text-input" placeholder="First name">
+                <br><br>
+                <input type="text" id="lastname" class="text-input" placeholder="Last name">
+                <br><br>
+
+                <!-- Phone number -->
+                <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
+                <br><br>
+
+                <!-- Email -->
+                <input type="text" id="email" class="text-input" placeholder="Email">
+                <br><br>
+
+                <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea>
+
+                <button class="submitbtn" type="submit">Ping us</button>
+            </div>
+        </form>
+
+    </div>
+
+     <div class="col-lg-4 center social-connect">
+
+	<div>
+
+        <h4 class="center">Let's Connect</h4>
+           <div class="border-padding">
+        <!--Facebook-->
+        <a class="btn-floating btn-lg btn-fb" onclick="social_media_facebook()" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+        <!--Instagram-->
+        <a class="btn-floating btn-lg btn-ins" onclick="social_media_instagram()" type="button" role="button"><i class="fab fa-instagram"></i></a>
+        <!--Youtube-->
+        <a class="btn-floating btn-lg btn-yt"  onclick="social_media_youtube()" type="button" role="button"><i class="fab fa-youtube"></i></a>
+        <!--WhatsApp-->
+        <a class="btn-floating btn-lg btn-whatsapp" onclick="social_media_whatsapp()" type="button" role="button"><i class="fab fa-whatsapp"></i></a>
+        <div class="social-media-facebook">
+            <h5>facebook</h5>
+
+
+        </div>
+        <div class="social-media-instagram">
+            <h5>instagram</h5>
+            hey it's instagram
+
+        </div>
+        <div class="social-media-youtube">
+            <h5>youtube</h5>
+            hey it's youtube
+
+        </div>
+        <div class="social-media-whatsapp">
+            <h5>whatsapp</h5>
+            hey it's whatsapp
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+
+<script src="{% static "main/javascript/services.js" %}"></script>
+{% endblock %}
