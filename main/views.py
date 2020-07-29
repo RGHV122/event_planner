@@ -5,18 +5,18 @@ def index(request):
 	return render(request,'main/index.html')
 
 def about(request):
-    return render(request,'main/about.html')
+	return render(request,'main/about.html')
+
+def contact(request):
+	return render(request,'main/contact.html')
 
 def services(request):
 
-    colors=['#0275d8','#5cb85c','#5bc0de','#f0ad4e','#d9534f']
-    return render(request,'main/services.html',{'colors':colors})
-
-def contact(request):
-    return render(request,'main/contact.html')
-
+	colors=['#0275d8','#5cb85c','#5bc0de','#f0ad4e','#d9534f']
+	return render(request,'main/services.html',{'colors':colors})
 	colors=['#024f37','#02304f','#7dc1e3','#7de395','#897de3']
 	return render(request,'main/services.html',{'colors':colors})
+
 from math import ceil
 def gallery(request,page=1):
 	posts = Gallery.objects.all().order_by('time').reverse()
