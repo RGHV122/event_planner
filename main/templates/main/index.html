@@ -9,22 +9,24 @@
 
 {% block body%}
 <div class="message-container">
-  <img src="{% static "main/images/home/message-background.jpg" %}"  alt=" background for theme message" style="width:100%;">
+  <img class="message-background-img"src="{% static "main/images/home/message-background.jpg" %}"  alt=" background for theme message" style="width:100%;">
 
-  <div class="message-block .hidden-phone">
-    <h4>You Dream it, We Take Care Of It</h4><hr>
-    <p >~Heavenly hitched</p>
-    <div class="logo-image">
-   <img class="message-logo" src="{% static "main/images/home/black-logo.png" %}" alt=" background for theme message" >
-</div>
+  <div class="message-block">
+        <h5>You Dream it, We Take Care Of It</h5><hr>
+    <p style="float:right;">~Heavenly hitched</p>  
+
   </div>
 </div>​
+<div class="message-block-small">
+        <h5>You Dream it, We Take Care Of It</h5><hr>
+    <p >~Heavenly hitched</p>  
 
+  </div>
 
 <div class="what-we-do">
 	<div class="center"><h4>What We Do</h4></div>
 <div class="row ">
-	<div class="col-sm-4">
+	<div class="col-sm-4 ">
 		<h5>Venue booking</h5>
 		<p>We offer consultation to help you book the perfect venue in any part of India</p>
     </div>
@@ -57,7 +59,7 @@
 </div>
 
 <div class="row border-padding">
-	<div class="col-sm-4">
+	<div class="col-sm-4 py-3 ">
 		<a href="{% url 'main:services' %}">
     		 <img src="{% static "main/images/home/services-background.jpg" %}" class="center-image" alt="background for theme message" >
     		 <div class="thumb-caption">Services</div>
@@ -65,15 +67,15 @@
     	</a>
     </div>
     
-    <div class="col-sm-4">
-    	<a href="">
+    <div class="col-sm-4 py-3 ">
+    	<a href="{% url 'main:gallery' %}">
     		<img src="{% static "main/images/home/gallery-background.jpg" %}" class="center-image"alt="background for theme message" >
        		<div class="thumb-caption">Gallery</div>
     	</a>
        
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-4 py-3 ">
     	<a style="padding-right:0px;"href="{% url 'main:about' %}">
     		<img src="{% static "main/images/home/about-background.jpg" %}" class="center-image"alt="background for theme message" >
        		<div class="thumb-caption">About</div>

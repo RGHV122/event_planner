@@ -5,27 +5,26 @@
 .message-container img{
 	width: 80%;
 }
-
+.message-background-img{
+	filter: brightness(50%);
+}
 .message-block {
   position: absolute;
-  top: -10%;
-  right: 5%;
-  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  padding: 20px;
-  width: 20%;
-  height: 80%;
-  margin-top: auto;
-  margin-bottom: auto;
+  height: auto;
+  max-width: 50%;
 }
-.logo-image{
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
 
-}
 .center-image{
 	max-width: 100%;
+	border-radius: 5px;
+	transition-duration: 1s;
+}
+.center-image:hover{
+	opacity: 0.7;
 }
 .center{
 	text-align: center!important;
@@ -107,34 +106,46 @@
 	background-color: #ABCDE1
 
 }
+.message-block-small{
+	display: none;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	width: auto;
+	transform: translateX(-50%);
+	margin-bottom: 0px;
+	
+}
+.message-block-small p{
+	float:right;
+}
 @media only screen and (max-width: 974px){
 	.message-block{
-		position: relative;
-		text-align: center;
-		width: 100%;
-		height: auto;
-		margin: 0px 0px 0px 0px;
-		top: 0%;
-  		right: 0%;
-
-	}
-	.message-logo{
 		display: none;
 	}
+	.message-block-small{
+	display: block;
+}
+.message-block-small p{
+	
+	float: none;
+	text-align: center;
+}
 
 }
 
 
 @media only screen and (orientation: portrait){
 	.message-block{
-		width: 100%;
-		position: relative;
-		text-align: center;
-		
-
-	}
-	.message-logo{
 		display: none;
 	}
+	.message-block-small{
+	display: block;
+}
+.message-block-small p{
+	
+	float: none;
+	text-align: center;
+}
 
 }
