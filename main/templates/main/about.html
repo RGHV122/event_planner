@@ -2,16 +2,19 @@
 
 {% extends 'main/base.html' %}
 
-{% block title%} About Us{% endblock %}
+{% load static %}
+{% block title %}
+About Us | Heavenly hitched
+{% endblock %}
 {% block body %}
 
 
 
 
-{% load static %}
 
 {% block head%}
 <link rel="stylesheet" type="text/css" href="{% static "main/css/index.css" %}">
+
  {% endblock %}
 
   <div class="row">
@@ -41,6 +44,7 @@
     </div>
 
 <div class="col-md-4 center border-padding-1">
+    <br>
 	<h4>Connect with us</h4>
     	<!-- Default form register -->
 <form class="" action="#!">

@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Gallery
+from .models import Gallery,Blogpost
 # Create your views here.
 def index(request):
 	return render(request,'main/index.html')
@@ -34,3 +34,14 @@ def gallery(request,page=1):
 
 
 	return render(request,'main/gallery.html',{'posts':posts,'last_page':last_page,'page':page,'next_page':page+1,'prev_page':page-1})
+
+def blog(request):
+	myposts = Blogpost.objects.all()
+	print(myposts)
+	return render(request,'main/blog.html',
+				  {'myposts': myposts})
+
+def blogpost(request, id):
+	post = Blogpost.objects.filter(post_id = id)[0]
+	print(post)
+	return render(request, 'main/blogpost.html',{'post': post})
