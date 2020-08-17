@@ -63,49 +63,10 @@
 	border:5px solid black!important;
 }
 
-.why-us, .border-padding{
+.why-us{
 	padding: 5%!important;
 }
-.border-padding-less{
-	padding: 2%!important;
-}
-.border-padding-1{
-	padding: 1%;
-}
 
-.text-input{
-	width: 100%;
-	border-style: none;
-	border-bottom: 1px solid gray;
-	padding-bottom: 5px;
-	
-}
-
-.text-area{
-	border:1px solid gray;
-}
-.text-input:focus,.text-area:focus{
-	outline: none;
-}
-.text-input:focus{
-	border-bottom: 2px solid gray;
-}
-.text-area:focus{
-	border: 2px solid gray;
-}
-.submitbtn{
-	margin-top: 10px;
-	width: 100%;
-	background-color: #EEDEE9;
-	color:black;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-style: none;
-}
-.submitbtn:hover{
-	background-color: #ABCDE1
-
-}
 .message-block-small{
 	display: none;
 	text-align: center;

@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Gallery,Blogpost
+from .models import Gallery,Blogpost, ContactFormModel
 # Create your views here.
 def index(request):
 	return render(request,'main/index.html')
@@ -45,3 +45,21 @@ def blogpost(request, id):
 	post = Blogpost.objects.filter(post_id = id)[0]
 	print(post)
 	return render(request, 'main/blogpost.html',{'post': post})
+
+def handler500(request):
+    return render(request, '500.html', status=500)
+
+def contactme(request):
+	if request.POST:
+		pass
+	else:
+		return redirect('main:contact')
+	first_name  = request.POST.get('firstname')
+	last_name  = request.POST.get('lastname')
+	email  = request.POST.get('email')
+	contact_number = request.POST.get('mobile')
+	event_detail  = request.POST.get('eventdetail')
+
+	ContactFormModel.objects.create(first_name=first_name,last_name=last_name,email=email
+		,contact_number=contact_number,event_detail=event_detail)
+	return redirect('main:contact')

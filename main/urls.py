@@ -10,7 +10,8 @@ urlpatterns = [
     path('services/',views.services,name='services'),
     path("contact/", views.contact, name="contact"),
     path("blog/", views.blog, name="blog"),
-    path("blog/blogpost/<int:id>", views.blogpost, name="blogpost")
+    path("blog/blogpost/<int:id>", views.blogpost, name="blogpost"),
+    path("add-contact-me/",views.contactme, name="contact-me")
 
 
 

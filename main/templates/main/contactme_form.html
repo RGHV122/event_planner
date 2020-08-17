@@ -1,0 +1,25 @@
+{% load static %}
+<script src="{% static "main/javascript/contactmeform.js" %}"></script>
+<form  method ="post" onsubmit="return contactmechecker()" action="{% url 'main:contact-me' %}">
+  {% csrf_token %}
+<div class="border-padding">
+
+
+    <input type="text" id="firstname" name="firstname"class="text-input" placeholder="First name">
+    <br><br>
+    <input type="text" id="lastname" name="lastname" class="text-input" placeholder="Last name">
+    <br><br>
+
+    <!-- Phone number -->
+    <input type="text" id="mobile" name="mobile" class="text-input" placeholder="Contact Number">
+    <br><br>
+
+  <!-- Email -->
+  <input type="text" id="email" name="email" class="text-input" placeholder="Email">
+    <br><br>
+
+  <textarea class="text-input text-area rounded-0" placeholder="About Event" name="eventdetail" id="eventdetail" rows="5"></textarea>
+
+    <button class="submitbtn" type="submit">Ping us</button>
+</div>
+</form>

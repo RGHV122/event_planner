@@ -24,3 +24,9 @@ class Blogpost(models.Model):
 
     def __str__(self):
         return self.title
+class ContactFormModel(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email = models.CharField(max_length=100)
+    contact_number = models.CharField(max_length=20)
+    event_detail = models.TextField()

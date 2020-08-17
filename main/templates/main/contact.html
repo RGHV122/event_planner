@@ -17,6 +17,7 @@ Contact Us | Heavenly hitched
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 <link rel="stylesheet" type="text/css" href="{% static "main/css/contact.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "main/css/contactmeform.css" %}">
 
 {% endblock %}
 <div class="body-container">
@@ -25,28 +26,7 @@ Contact Us | Heavenly hitched
     <div class="col-md-8 center border-padding-1">
         <h1>Connect with us</h1>
         <!-- Default form register -->
-        <form class="" action="#!">
-            <div class="border-padding">
-
-
-                <input type="text" id="firstname" class="text-input" placeholder="First name">
-                <br><br>
-                <input type="text" id="lastname" class="text-input" placeholder="Last name">
-                <br><br>
-
-                <!-- Phone number -->
-                <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
-                <br><br>
-
-                <!-- Email -->
-                <input type="text" id="email" class="text-input" placeholder="Email">
-                <br><br>
-
-                <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="5"></textarea>
-
-                <button class="submitbtn" type="submit">Ping us</button>
-            </div>
-        </form>
+        {% include 'main/contactme_form.html' %}
 
     </div>
 

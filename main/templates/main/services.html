@@ -9,7 +9,7 @@ Services | Heavenly hitched
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 <link rel="stylesheet" type="text/css" href="{% static "main/css/services.css" %}">
-
+<link rel="stylesheet" type="text/css" href="{% static "main/css/contactmeform.css" %}">
 {% endblock %}
 
 {% block body %}
@@ -74,41 +74,10 @@ Services | Heavenly hitched
 		<h4>Request a call?</h4>
 <h4>Just fill this out</h4><hr>
     	<!-- Default form register -->
-<form class="" action="#!">
-<div class="border-padding form">
-    <div class="row">
-        <div class="col">
-            <input type="text" id="firstname" class="text-input" placeholder="First name">
-        </div>
-        
-    </div>
-    <div class="row">
-        <div class="col">
-            <input type="text" id="lastname" class="text-input" placeholder="Last name">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <input type="text" id="email" class="text-input" placeholder="Email">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <input type="text" id="mobile" class="text-input" placeholder="Contact Number">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <textarea class="text-input text-area rounded-0" placeholder="About Event" id="exampleFormControlTextarea" rows="8"></textarea> 
-        </div>
-    </div>
-
-    <button class="submitbtn" type="submit">Ping us</button>
-</div>
-</form>
+{% include 'main/contactme_form.html' %}
 		
 </div>
+
 <div class="social-connect">
 	<h4 class="center">Connect with us</h4>
 	<!--Facebook-->
