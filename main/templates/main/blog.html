@@ -50,20 +50,24 @@ Blog | Heavenly hitched
 
     <!-- Pagination -->
     <ul class="pagination justify-content-center mb-4">
-        <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-        </li>
-        <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-        </li>
+        <span class="step-links">
+        {% if myposts.has_previous %}
+            <a href="?page=1">&larr;</a>
+            <a href="?page={{ myposts.previous_page_number }}"> Older</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ myposts.number }} of {{ myposts.paginator.num_pages }}.
+        </span>
+
+        {% if myposts.has_next %}
+            <a href="?page={{ myposts.next_page_number }}">Newer </a>
+            <a href="?page={{ myposts.paginator.num_pages }}"> &rarr;</a>
+        {% endif %}
+    </span>
     </ul>
 
 </div>
 <!-- /.container -->
-
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 {% endblock %}

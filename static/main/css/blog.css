@@ -1,65 +1,9 @@
-.center{
-	text-align: center!important;
-	padding-bottom: 5%;
+.card-img, .card-img-bottom, .card-img-top {
+    height: 300px;
+    width: 100%;
 }
-
-
-
-.text-input{
-	width: 100%;
-	border-style: none;
-	border-bottom: 1px solid gray;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-}
-
-.text-area{
-	border:1px solid gray;
-}
-.text-input:focus,.text-area:focus{
-	outline: none;
-}
-.text-input:focus{
-	border-bottom: 2px solid gray;
-}
-.text-area:focus{
-	border: 2px solid gray;
-}
-.submitbtn{
-	margin-top: 10px;
-	width: 100%;
-	background-color: #EEDEE9;
-	color:black;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-style: none;
-}
-.submitbtn:hover{
-	background-color: #ABCDE1
-
-}
-.form-block{
-	background-color: white;
-	padding: 20px;
-	margin-top: 10px;
-}
-.border-padding{
-	padding: 5px;
-}
-.form{
-	border: 5px solid gray;
-	border-radius: 2px;
-	padding: 20px;
-	border-bottom: none
-}
-.social-connect{
-	margin-top: 50px;
-}
-.social-connect i{
-	height: 30px;
-	width: 30px;
-}
-.social-media-facebook,.social-media-instagram,.social-media-youtube,.social-media-whatsapp{
-	display: none;
-	text-align: center;
+.card .card-body .card-text {
+    font-size: .9rem;
+    font-weight: 400;
+    color: blue!important;
 }

@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Gallery,Blogpost, ContactFormModel
+from django.core.paginator import Paginator
 # Create your views here.
 def index(request):
 	return render(request,'main/index.html')
@@ -36,7 +37,10 @@ def gallery(request,page=1):
 	return render(request,'main/gallery.html',{'posts':posts,'last_page':last_page,'page':page,'next_page':page+1,'prev_page':page-1})
 
 def blog(request):
-	myposts = Blogpost.objects.all()
+	all_posts = Blogpost.objects.all()
+	paginator = Paginator(all_posts, 6)
+	page_number = request.GET.get('page')
+	myposts = paginator.get_page(page_number)
 	print(myposts)
 	return render(request,'main/blog.html',
 				  {'myposts': myposts})
