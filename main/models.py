@@ -4,7 +4,6 @@ from django.db import models
 class Gallery(models.Model):
 	image = models.ImageField(upload_to='gallery/')
 	heading = models.CharField(max_length=70)
-	description = models.TextField()
 	time = models.DateTimeField(auto_now_add=True)
 
 class Blog(models.Model):
