@@ -1,12 +1,9 @@
-
-
 {% extends 'main/base.html' %}
 
 {% block title %}
 Contact Us | Heavenly hitched
 {% endblock %}
 {% block body %}
-
 
 
 
@@ -20,21 +17,24 @@ Contact Us | Heavenly hitched
 <link rel="stylesheet" type="text/css" href="{% static "main/css/contactmeform.css" %}">
 
 {% endblock %}
-<div class="body-container">
+
+<div class="body-container ">
+
 <div class="row">
 
     <div class="col-md-8 center border-padding-1">
-        <h1>Connect with us</h1>
+
+        <h1>Contact Us</h1>
         <!-- Default form register -->
         {% include 'main/contactme_form.html' %}
 
-    </div>
 
-     <div class="col-lg-4 center social-connect">
+</div>
+     <div class="col-md-8 center social-connect">
 
 	<div>
 
-        <h4 class="center">Let's Connect</h4>
+        <h2 class="center">Let's Connect</h2>
            <div class="border-padding">
         <!--Facebook-->
         <a class="btn-floating btn-lg btn-fb" onclick="social_media_facebook()" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
@@ -64,12 +64,12 @@ Contact Us | Heavenly hitched
             hey it's whatsapp
 
         </div>
-
+ </div>
     </div>
 
 </div>
 </div>
-</div>
+
 
 <script src="{% static "main/javascript/services.js" %}"></script>
 {% endblock %}
