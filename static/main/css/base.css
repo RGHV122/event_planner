@@ -27,6 +27,8 @@ footer{
 }
 .navbar-brand{
 	font-size: 2rem;
+	font-family:Emilys Candy;
+	font:bold;
 }
 .nav-link{
 	 transition-duration: 0.5s!important;

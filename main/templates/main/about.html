@@ -13,45 +13,45 @@ About Us | Heavenly hitched
 
 
 {% block head%}
-<link rel="stylesheet" type="text/css" href="{% static "main/css/index.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "main/css/about.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{% static "main/css/contactmeform.css" %}">
 
- {% endblock %}
+{% endblock %}
+<div class="body-container border-padding-less">
+<div class="row">
 
-  <div class="row">
+    <div class="col-md-8">
+        <div class="center ">
+            <h1 class="display-3">About Us</h1>
+             <br>
+            <p>The foundation of love and a lifelong bond, a wedding is definitely one of the most memorable days of
+                life. Here at Heavenly Hitched, we assure you your perfect day. Nothing shorter than a dreamy, finest
+                and unforgettable experience. At heavenly hitched, we not only manage a wedding, but we curate it
+                thread by thread with love.</p>
+            <p>Heavenly Hitched initiated in 2020 by young, enthusiastic, creative and experienced event managers in New
+                Delhi. "Dilwalon ki Delhi" as it is fondly called is famous for its big fat Indian weddings, From venue
+                selection to theme decor, from authentic food to paradise like outdoors, from tailor made invites to the
+                best musical vaganza, we curate everything. We work intimately with the families to give them the best
+                memories to cherish.</p>
 
- 	<div class="col-md-8">
-		<div class="center border-padding-less">
- 		<h1 class="display-3">About Us</h1>
+            <p>Heavenly Hitched delivers highly customized, affordable, and a trendy wedding. We are committed to provide a
+                hassle free wedding so that couples and families can focus on the special occasion and only reminisce
+                the profound happiness, not the stress. We assure you to make your wedding picture perfect.  We promise to
+                value every penny you spend and to design your dream wedding for an unforgettable lifetime experience</p>
 
-		  <p class="border-padding">The foundation of love and a lifelong bond, a wedding is definitely one of the most memorable days of
-        life. Here at Heavenly Hitched, we assure you your perfect day. Nothing shorter than a dreamy, finest
-        and unforgettable experience. At heavenly hitched, we not only manage a wedding, but we curate it
-        thread by thread with love.</p>
-
-          <p class="border-padding">Heavenly Hitched initiated in 2020 by young, enthusiastic, creative and experienced event managers in New
-      Delhi. "Dilwalon ki Delhi" as it is fondly called is famous for its big fat Indian weddings, From venue
-      selection to theme decor, from authentic food to paradise like outdoors, from tailor made invites to the
-      best musical vaganza, we curate everything. We work intimately with the families to give them the best
-      memories to cherish.</p>
-
-          <p class="border-padding">Heavenly Hitched delivers highly customized, affordable, and a trendy wedding. We are committed to provide a
-      hassle free wedding so that couples and families can focus on the special occasion and only reminisce
-      the profound happiness, not the stress. We assure you to make your wedding picture perfect.  We promise to
-      value every penny you spend and to design your dream wedding for an unforgettable lifetime experience</p>
-
-</div>
-
-    </div>
-
-<div class="col-md-4 center border-padding-1">
-    <br>
-	<h4>Connect with us</h4>
-    	<!-- Default form register -->
-{% include 'main/contactme_form.html' %}
+        </div>
 
     </div>
-</div>
 
+    <div class="col-md-4 center border-padding-1">
+        <br><br>
+        <h4>Connect with us</h4>
+        <!-- Default form register -->
+        {% include 'main/contactme_form.html' %}
+
+    </div>
+</div>
+</div>
 
 {% endblock %}

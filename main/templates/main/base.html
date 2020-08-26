@@ -3,76 +3,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% block title%} {% endblock %}</title>
-	<link rel = "icon" href ="{% static "main/images/icon.png" %}"
-        type = "image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title%} {% endblock %}</title>
+    <link rel = "icon" href ="{% static "main/images/icon.png" %}"
+    type = "image/x-icon">
 
 
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{% static "main/css/base.css" %}">
-{% block head%}
-{% endblock %}
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!--Header font -->
+    <link href='https://fonts.googleapis.com/css?family=Emilys Candy' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static "main/css/base.css" %}">
+    {% block head%}
+    {% endblock %}
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light header">
-  <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <a class="navbar-brand" href="{% url 'main:index' %}"><img class="img-fluid" alt="Icon" src="{% static "main/images/icon.png" %}">Heavenly hitched</a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'main:index' %}">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{% url 'main:about' %}">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'main:gallery' %}">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'main:services' %}">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'main:blog' %}">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'main:contact' %}">Contact Us</a>
-      </li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light header">
+    <div class="container-fluid">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="{% url 'main:index' %}"><img class="img-fluid" alt="Icon" src="{% static "main/images/icon.png" %}">Heavenly Hitched</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main:index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main:about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main:gallery' %}">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main:services' %}">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main:blog' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'main:contact' %}">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
-	{% block body %}
-  {% endblock %}
+{% block body %}
+{% endblock %}
 
-  <!-- Footer -->
-        <footer class="page-footer font-small">
+<!-- Footer -->
+<footer class="page-footer font-small">
 
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="{% url 'main:index' %}"> Heavenlyhitched.com</a>
-          </div>
-          <!-- Copyright -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="{% url 'main:index' %}"> Heavenlyhitched.com</a>
+    </div>
+    <!-- Copyright -->
 
-        </footer>
+</footer>
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
