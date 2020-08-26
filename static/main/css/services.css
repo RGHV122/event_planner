@@ -5,12 +5,22 @@
 .body-container{
 	width: 100%;
 	height: 100%;
-
-	background-image: linear-gradient(#b87469,#EEDEE9,#EEDEE9);
+    font-family: 'Bree Serif', serif;
+	background-image: linear-gradient(#004080,#004d99,#0073e6,#66b3ff,#cce6ff);
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-bottom: 10px;
 	
+}
+h1 {
+
+font-size: 50px;
+font-weight: bold;
+
+}
+.service p {
+    font-size: 0.9rem!important;
+    ext-indent: 10%;
 }
 .services-block{
 	background-color: white;
