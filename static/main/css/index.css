@@ -1,3 +1,6 @@
+.body-container{
+  font-family: 'Sawarabi Mincho', sans-serif;
+  }
 .message-container {
   position: relative;
   font-family: Arial;
@@ -55,6 +58,13 @@
 	background-color: #EEDEE9!important;
 	color: black!important;
 }
+.why-us{
+	padding: 5%;
+
+	background-color: #EEDEE9!important;
+	color: black!important;
+}
+
 
 ..what-we-do .row .col-sm-4{
 	padding: 5%!important;

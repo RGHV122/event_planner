@@ -4,6 +4,7 @@
 
 {% block head%}
 <link rel="stylesheet" type="text/css" href="{% static "main/css/index.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mincho&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{% static "main/css/contactmeform.css" %}">
 {% endblock %}
 
@@ -23,122 +24,116 @@
 	<p >~Heavenly hitched</p>
 
 </div>
+    <div class="body-container border-padding-less">
+	<div class="what-we-do">
+		<div class="center"><h2>What We Do</h2></div>
+		<div class="row ">
+			<div class="col-sm-4 ">
+				<h5>Venue booking</h5>
+				<p>We offer consultation to help you book the perfect venue in any part of India</p>
+			</div>
+			<div class="col-sm-4">
+				<h5>Hospitality & Logistics</h5>
+				<p>The D-Day is the most special day for the bride, groom and their families but it wouldn’t be surprising to say that the guests need to be felt special too.</p>
+			</div>
+			<div class="col-sm-4">
+				<h5>Decor & Styling</h5>
+				<p>You needn’t worry about the wedding décor and styling as we look after the crucial elements of putting the pieces together that exude your style and sense of aesthetics.</p>
+			</div>
 
-<div class="what-we-do">
-	<div class="center"><h4>What We Do</h4></div>
-	<div class="row ">
-		<div class="col-sm-4 ">
-			<h5>Venue booking</h5>
-			<p>We offer consultation to help you book the perfect venue in any part of India</p>
-		</div>
-		<div class="col-sm-4">
-			<h5>Hospitality & Logistics</h5>
-			<p>The D-Day is the most special day for the bride, groom and their families but it wouldn’t be surprising to say that the guests need to be felt special too.</p>
-		</div>
-		<div class="col-sm-4">
-			<h5>Decor & Styling</h5>
-			<p>You needn’t worry about the wedding décor and styling as we look after the crucial elements of putting the pieces together that exude your style and sense of aesthetics.</p>
-		</div>
-
-	</div>
-
-	<div class="row ">
-		<div class="col-sm-4">
-			<h5>Gifting</h5>
-			<p>Show that you are thankful to your guests by choosing the most memorable token of love from a gamut of personalized gifts.</p>
-		</div>
-		<div class="col-sm-4">
-			<h5>Photo & Videography</h5>
-			<p>The professionalteam covers all the ceremonies as required and also provides photos for pre-wedding, post-wedding, anniversary, family, and videography at the wedding venue.</p>
-		</div>
-		<div class="col-sm-4">
-			<h5>Hair & Makeup</h5>
-			<p>Heavenly Hitched ensures that you look flawless in your wedding photos and look no less than how you have always imagined it to be.</p>
 		</div>
 
-	</div>
-</div>
+		<div class="row ">
+			<div class="col-sm-4">
+				<h5>Gifting</h5>
+				<p>Show that you are thankful to your guests by choosing the most memorable token of love from a gamut of personalized gifts.</p>
+			</div>
+			<div class="col-sm-4">
+				<h5>Photo & Videography</h5>
+				<p>The professional team covers all the ceremonies as required and also provides photos for pre-wedding, post-wedding, anniversary, family, and videography at the wedding venue.</p>
+			</div>
+			<div class="col-sm-4">
+				<h5>Hair & Makeup</h5>
+				<p>Heavenly Hitched ensures that you look flawless in your wedding photos and look no less than how you have always imagined it to be.</p>
+			</div>
 
-<div class="row border-padding">
-	<div class="col-sm-4 py-3 ">
-		<a href="{% url 'main:services' %}">
-			<img src="{% static "main/images/home/services-background.jpg" %}" class="center-image" alt="background for theme message" >
-			<div class="thumb-caption">Services</div>
-
-		</a>
-	</div>
-
-	<div class="col-sm-4 py-3 ">
-		<a href="{% url 'main:gallery' %}">
-			<img src="{% static "main/images/home/gallery-background.jpg" %}" class="center-image"alt="background for theme message" >
-			<div class="thumb-caption">Gallery</div>
-		</a>
-
+		</div>
 	</div>
 
-	<div class="col-sm-4 py-3 ">
-		<a style="padding-right:0px;"href="{% url 'main:about' %}">
-			<img src="{% static "main/images/home/about-background.jpg" %}" class="center-image"alt="background for theme message" >
-			<div class="thumb-caption">About</div>
-		</a>
+	<div class="row border-padding">
+		<div class="col-sm-4 py-3 ">
+			<a href="{% url 'main:services' %}">
+				<img src="{% static "main/images/home/services-background.jpg" %}" class="center-image" alt="background for theme message" >
+				<div class="thumb-caption">Services</div>
 
-	</div>
-</div>
+			</a>
+		</div>
 
-<div class="why-us center">
-	<h4>Why us?</h4><hr>
-	<div class="border-padding">
-		<h4>Why choose us as your Destination wedding planner?</h4>
+		<div class="col-sm-4 py-3 ">
+			<a href="{% url 'main:gallery' %}">
+				<img src="{% static "main/images/home/gallery-background.jpg" %}" class="center-image"alt="background for theme message" >
+				<div class="thumb-caption">Gallery</div>
+			</a>
 
-		<p>Even small decisions can add up to big savings when you have a planner what they are doing. Here we assure you to make the most of your wedding budget. We help to coordinate right from the engagement to reception. You just need to cherish each and every moment of your wedding. We are here to make your wedding a piece of cake for you. We are there to manage the conversations between you and the venue, negotiating rates for things like catering and confirming the timeline to ensure everything goes smoothly
-		</p>
+		</div>
 
-	</div>
+		<div class="col-sm-4 py-3 ">
+			<a style="padding-right:0px;"href="{% url 'main:about' %}">
+				<img src="{% static "main/images/home/about-background.jpg" %}" class="center-image"alt="background for theme message" >
+				<div class="thumb-caption">About</div>
+			</a>
 
-	<div class="border-padding-less">
-		<h4>Our services</h4>
-
-		<p>Heavenly hitched is fastest growimg wedding planners in delhi, and we provide excellent services to our customers such as:</p>
-
-	</div>
-	<div class="border-padding-less">
-		<h4>DECOR AND VENUE BOOKINGS</h4>
-
-		<p>Wedding decoration is one of the most considered attractions of one’s D-day. The right decoration adds life to the surrounding. Heavenly hitched promise you the drooling venues and decors which make everyone stop and stare. Right from the welcome board to tables of the celebrants and to the aisle runner, everything that matches your wedding fantasies. We are furnishing nearly every decor style the contemporary, minimalist and traditional. We persuade the trendiest weddings in the town in Delhi-NCR.
-
-		</p>
+		</div>
 	</div>
 
+	<div class="why-us center">
+		<h1>Why us?</h1><hr>
+		<div class="border-padding-less">
+			<h3>Why choose us as your Destination wedding planner?</h3>
 
-	<hr>
-</div>
-
-<div class="row">
-
-	<div class="col-md-6">
-		<div class="center border-padding-less">
-			<h4>How We Work</h4>
-
-			<p class="border-padding">  As your wedding companion we, lay hold on every  responsibilities from drafting timeline and working with bride and groom to their attires , every ceremony, venues, guests , music, dance and food. We are full service planners, we specially eyed your budget and turn magic into reality.
+			<p>Even small decisions can add up to big savings when you have a planner what they are doing. Here we assure you to make the most of your wedding budget. We help to coordinate right from the engagement to reception. You just need to cherish each and every moment of your wedding. We are here to make your wedding a piece of cake for you. We are there to manage the conversations between you and the venue, negotiating rates for things like catering and confirming the timeline to ensure everything goes smoothly
 			</p>
-			<p>We are here to handle the shopping , so you will have a stress free day. We will provide the best photographers of the town for those perfect shots of your wedding which you can cherish live long. We guarantee you the “oh so delicious food”, and the most picturesque vendors. And yes, we owned the entertainment section also.
+
+		</div>
+
+		<div class="border-padding-less">
+			<h3>Decor and Venue Bookings</h3>
+
+			<p>Wedding decoration is one of the most considered attractions of one’s D-day. The right decoration adds life to the surrounding. Heavenly hitched promise you the drooling venues and decors which make everyone stop and stare. Right from the welcome board to tables of the celebrants and to the aisle runner, everything that matches your wedding fantasies. We are furnishing nearly every decor style the contemporary, minimalist and traditional. We persuade the trendiest weddings in the town in Delhi-NCR.
+
 			</p>
 		</div>
+
+
+		<hr>
 	</div>
 
+	<div class="row">
 
-	<div class="col-md-6 center border-padding-1">
-		<div>
-			<h4>Request a call? Just fill this out</h4>
-			<!-- Default form register -->
-			{% include 'main/contactme_form.html' %}
+		<div class="col-md-6">
+			<div class="center border-padding-less">
+				<h1>How We Work</h1>
+
+				<p class="border-padding">  As your wedding companion we, lay hold on every  responsibilities from drafting timeline and working with bride and groom to their attires , every ceremony, venues, guests , music, dance and food. We are full service planners, we specially eyed your budget and turn magic into reality.
+				</p>
+				<p>We are here to handle the shopping , so you will have a stress free day. We will provide the best photographers of the town for those perfect shots of your wedding which you can cherish live long. We guarantee you the “oh so delicious food”, and the most picturesque vendors. And yes, we owned the entertainment section also.
+				</p>
+			</div>
 		</div>
 
 
-	</div>
+		<div class="col-md-6 center border-padding-1">
+			<div>
+				<h3>Request a call? Just fill this out</h3>
+				<!-- Default form register -->
+				{% include 'main/contactme_form.html' %}
+			</div>
 
+
+		</div>
+
+	</div>
 </div>
 
 
-
-{% endblock %}
+	{% endblock %}
