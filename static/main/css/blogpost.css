@@ -3,7 +3,7 @@
 	margin-bottom: 50px;
 }
 .description p::first-letter {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 .description p{
