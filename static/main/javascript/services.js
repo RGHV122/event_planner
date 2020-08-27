@@ -39,5 +39,4 @@ function social_media_whatsapp(){
 	instagram_span.style.display="none";
 	youtube_span.style.display="none";
 	whatsapp_span.style.display="block";
-
 }

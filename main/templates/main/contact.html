@@ -14,28 +14,53 @@ Contact Us | Heavenly hitched
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 <link rel="stylesheet" type="text/css" href="{% static "main/css/contact.css" %}">
-<link rel="stylesheet" type="text/css" href="{% static "main/css/contactmeform.css" %}">
 
 {% endblock %}
-
+<script src="{% static "main/javascript/contactmeform.js" %}"></script>
 <div class="body-container ">
 
 <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 center border-padding ">
 
-    <div class="col-md-8 center border-padding-1">
-
-        <h1>Contact Us</h1>
+        <h2 style="color:white;">Contact Us</h2>
         <!-- Default form register -->
-        {% include 'main/contactme_form.html' %}
+        
+        <form  method ="post" onsubmit="return contactmechecker()" action="{% url 'main:contact-me' %}">
+          {% csrf_token %}
+        <div class="border-padding">
+
+
+            <input type="text" id="firstname" name="firstname"class="text-input" placeholder="First name">
+            <br><br>
+            <input type="text" id="lastname" name="lastname" class="text-input" placeholder="Last name">
+            <br><br>
+
+            <!-- Phone number -->
+            <input type="text" id="mobile" name="mobile" class="text-input" placeholder="Contact Number">
+            <br><br>
+
+          <!-- Email -->
+          <input type="text" id="email" name="email" class="text-input" placeholder="Email">
+            <br><br>
+
+          <textarea class="text-input text-area rounded-0" placeholder="About Event" name="eventdetail" id="eventdetail" rows="5"></textarea>
+
+            <button class="submitbtn" type="submit">Ping us</button>
+        </div>
+        </form>
 
 
 </div>
-     <div class="col-md-8 center social-connect">
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 center social-connect">
 
-	<div>
+    <div>
 
         <h2 class="center">Let's Connect</h2>
-           <div class="border-padding">
+           <div class="border-padding-1">
         <!--Facebook-->
         <a class="btn-floating btn-lg btn-fb" onclick="social_media_facebook()" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
         <!--Instagram-->
@@ -46,28 +71,26 @@ Contact Us | Heavenly hitched
         <a class="btn-floating btn-lg btn-whatsapp" onclick="social_media_whatsapp()" type="button" role="button"><i class="fab fa-whatsapp"></i></a>
         <div class="social-media-facebook">
             <h5>facebook</h5>
-
-
         </div>
+
         <div class="social-media-instagram">
-            <h5>instagram</h5>
-            hey it's instagram
-
+            <h5>instagram</h5>         
         </div>
+
         <div class="social-media-youtube">
-            <h5>youtube</h5>
-            hey it's youtube
-
+            <h5>youtube</h5>         
         </div>
+        
         <div class="social-media-whatsapp">
             <h5>whatsapp</h5>
-            hey it's whatsapp
-
         </div>
  </div>
     </div>
 
 </div>
+    
+</div>
+     
 </div>
 
 

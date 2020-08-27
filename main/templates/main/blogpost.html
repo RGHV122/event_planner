@@ -8,16 +8,13 @@ BlogPost | Heavenly hitched
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-<link rel="stylesheet" type="text/css" href="{% static "main/css/blog.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "main/css/blogpost.css" %}">
 
 {% endblock %}
 
 {% block body %}
 <div class="container">
-    <div class="row mt-4">
-        <div class="col-md-8 blog-main">
-
-
+    <div class="row">
             <div class="blog-post">
                 <h2 class="blog-post-title">{{post.title}}</h2>
 
@@ -26,24 +23,15 @@ BlogPost | Heavenly hitched
 
 
                 <img class="img-fluid rounded" src="{{post.thumbnail.url}}" alt="">
-                  <h2>{{post.head0}}</h2>
-                <p>{{post.chead0}}</p>
-
-
-                <h2>{{post.head1}}</h2>
-                <p>{{post.chead1}}</p>
+                  
+                  <div class="description">
+                      {{post.blogpost | safe }}
+                  </div>
+                  
 
             </div><!-- /.blog-post -->
 
-
-
-        </div><!-- /.blog-main -->
-
-
-
     </div><!-- /.row -->
 </div>
-<!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 {% endblock %}

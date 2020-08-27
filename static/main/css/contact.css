@@ -2,9 +2,8 @@
 .row{
 
     color: black;
-    margin-left: 350px;
 	padding-bottom: 20px;
-	margin-right: 100px;
+	text-align: center;
 }
 
 h1 {
@@ -22,7 +21,9 @@ margin-bottom: 1px;
 	padding-bottom: 5%;
 }
 
-
+.border-padding{
+	padding: 5%;
+}
 .border-padding-1{
 	padding: 1%;
 }
@@ -30,7 +31,8 @@ margin-bottom: 1px;
 	width: 100%;
 	border-style: none;
 	border-bottom: 1px solid gray;
-	padding-bottom: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
 
 }
 
@@ -41,10 +43,10 @@ margin-bottom: 1px;
 	outline: none;
 }
 .text-input:focus{
-	border-bottom: 2px solid gray;
+	border-bottom: 4px solid black;
 }
 .text-area:focus{
-	border: 2px solid gray;
+	border: 4px solid black;
 }
 .submitbtn{
 	margin-top: 10px;
@@ -78,6 +80,7 @@ margin-bottom: 1px;
 	font-size: 60px;
     font-weight: bold;
     color: white;
+    text-align: center;
 
 }
 .social-connect i{
