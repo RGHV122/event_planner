@@ -11,7 +11,18 @@
 }
 .description h1,h2,h3,h4,h5 {
   text-align: center;
+
 }
 .blog-post{
 	padding: 5%;
+}
+.container{
+font-family: 'Markazi Text', serif;
+}
+p {
+    font-size:130%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    text-align-last: center;
 }

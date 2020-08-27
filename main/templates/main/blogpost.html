@@ -7,6 +7,7 @@ BlogPost | Heavenly hitched
 {% block head %}
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="{% static "main/css/blogpost.css" %}">
 
@@ -16,7 +17,7 @@ BlogPost | Heavenly hitched
 <div class="container">
     <div class="row">
             <div class="blog-post">
-                <h2 class="blog-post-title">{{post.title}}</h2>
+                <h1 class="blog-post-title ">{{post.title}}</h1>
 
                     <p class="blog-post-meta">{{post.pub_date}}
                         <a href="{% url 'main:index' %}">Heavenly Hitched</a></p>
