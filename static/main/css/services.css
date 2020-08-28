@@ -115,6 +115,11 @@ font-weight: bold;
 	height: 30px;
 	width: 30px;
 }
+.social-desc{
+	background-color: black;
+	padding: 5%;
+	color:white;
+}
 .social-media-facebook,.social-media-instagram,.social-media-youtube,.social-media-whatsapp{
 	display: none;
 	text-align: center;
