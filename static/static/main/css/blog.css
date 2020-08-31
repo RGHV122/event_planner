@@ -1,0 +1,13 @@
+.card-img, .card-img-bottom, .card-img-top {
+    height: 300px;
+    width: 100%;
+}
+.card .card-body .card-text {
+    font-size: .9rem;
+    font-weight: 400;
+
+}
+
+.card-body {
+    height: 500px;
+}
